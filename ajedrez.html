@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>IoE EASF&YCB </title>
+	<title>Frameworks FTC</title>
 	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 	<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/dev/aframe/build/aframe-ar.js"></script>
 	<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -17,20 +17,20 @@
 	<!-- MDB -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
 </head>
-
+<center>
 <div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
-	<button type="button" class="btn btn-outline-primary btn-rounded  data-mdb-ripple-color="#000000" id="b1"> Peluches </button>
-	<button type="button" class="btn btn-outline-primary btn-rounded  data-mdb-ripple-color="#000000" id="b2"> Oso </button>
-	<button type="button" class="btn btn-outline-primary btn-rounded  data-mdb-ripple-color="#000000" id="b3"> Ajedrez </button>
+	<button type="button" class="btn btn-primary" id="btn1"> Peluches </button>
+	<button type="button" class="btn btn-primary" id="btn2"> Oso </button>
+	<button type="button" class="btn btn-primary" id="btn3"> Ajedrez </button>
   </div>
-  
+</center>
 <meta name="apple-mobile-web-app-capable" content="yes">
   
 <body style='margin : 0px; overflow: hidden;'>
 
     <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false">   
     <a-marker preset="hiro">
-		<a-entity id="obj" obj-model="obj: url(Ajedrez/Wood+Chess+Game.obj); mtl: url(Ajedrez/Wood+Chess+Game.mtl)" scale=".2 .2 .2" >
+		<a-entity id="objeto" obj-model="obj: url(Ajedrez/Wood+Chess+Game.obj); mtl: url(Ajedrez/Wood+Chess+Game.mtl)" scale=".2 .2 .2" >
       <a-animation id="anima" attribute="rotation" to="50 100 50" dur="2000" easing="linear" repeat="indefinite">
   </a-animation> 
   </a-entity>
@@ -39,15 +39,15 @@
     </a-scene>
 	
 	<script>
-    var anim = document.querySelector('#obj');
-    document.getElementById("b1").addEventListener("click", (e)=>{
+    var anim = document.querySelector('#objeto');
+    document.getElementById("btn1").addEventListener("click", (e)=>{
     window.location="index.html";
 
   })
-  document.getElementById("b2").addEventListener("click", (e)=>{
+  document.getElementById("btn2").addEventListener("click", (e)=>{
     window.location="Oso.html";
   })
-  document.getElementById("b3").addEventListener("click", (e)=>{
+  document.getElementById("btn3").addEventListener("click", (e)=>{
     location.reload();
   })
  
