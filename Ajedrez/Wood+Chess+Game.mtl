@@ -1,0 +1,16 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl _Wood_Cherry_Original_2
+Ka 0.000000 0.000000 0.000000
+Kd 0.337255 0.215686 0.145098
+Ks 0.330000 0.330000 0.330000
+map_Kd Wood+Chess+Game/_Wood_Cherry_Original_2.jpg
+
+newmtl _Wood_Cherry_Original_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.850980 0.717647 0.533333
+Ks 0.330000 0.330000 0.330000
+map_Kd Wood+Chess+Game/_Wood_Cherry_Original_1.jpg
+
